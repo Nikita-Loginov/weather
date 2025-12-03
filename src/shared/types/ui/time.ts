@@ -1,0 +1,1 @@
+export type ITimeOfDay = "morning" | "afternoon" | "evening" | "night";

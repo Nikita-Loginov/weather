@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { Input } from "../input/input";
 import { ThemeToggle } from "@/features/theme/ui/theme-toggle/theme-toggle";
+import { GreetingText } from "@/features/greeting/ui/greeting-text/greeting-text";
 
 import { setVarRoot } from "@/shared/lib/utils/set-var-root";
 
@@ -32,7 +33,7 @@ export const Header = () => {
     return () => {
       window.removeEventListener("resize", debouncedSetHeight);
     };
-  }, []);
+  }, [debouncedSetHeight]);
 
   return (
     <motion.header
@@ -48,7 +49,7 @@ export const Header = () => {
       <div className={css["header__info"]}>
         <p className="h5">Hi, friend</p>
 
-        <p className="h3">Good Morning</p>
+        <GreetingText />
       </div>
 
       <div className={css["header__details"]}>

@@ -1,5 +1,4 @@
 import { httpClient } from "../config/http-client";
-import { API_KEY } from "../config/api";
 
 export const weatherApi = {
   getForecast: async (lat: number, lon: number) => {
