@@ -1,15 +1,17 @@
 .wrapper {
-  padding: var(--padding-inline-container) 0;
+  --gap-layout: 20px;
+  --sibebar-width: 84px;
+  --grid-layout: var(--sibebar-width, 84px) auto;
+
+  padding: var(--padding-inline-container);
   position: relative;
 }
 
 .layout {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: var(--grid-layout);
+  gap: var(--gap-layout);
   height: 100%;
-}
-
-.container {
   position: relative;
   z-index: 2;
 }
@@ -23,7 +25,7 @@
 
 .bg {
   position: absolute;
-  inset:0;
+  inset: 0;
   z-index: 1;
   pointer-events: none;
 }

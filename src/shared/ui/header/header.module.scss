@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: calc(
+    var(--gap-layout, 20px) + var(--padding-inline-container, 20px) +
+      var(--sibebar-width, 84px)
+  );
+  right: calc(var(--padding-inline-container) + 15px);
+  position: fixed;
+  z-index: 100;
+  background-color: var(--gray-800-color);
+  border-radius: var(--border-radius-base);
+  padding: 17px;
+  transition: all .5s;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}

@@ -1,30 +1,29 @@
 import { Outlet } from "@tanstack/react-router";
 
+
 import { Videos } from "@/assets/videos";
 
 import { rc } from "@/shared/lib/utils/rc";
 
-import { Container } from "@/widgets/container/container";
+import { Header } from "@/shared/ui/header/header";
 import { Sidebar } from "@/shared/ui/sidebar/sidebar";
 
-import css from "./root-layout.module.css";
+import css from "./root-layout.module.scss";
 
 export const RootLayout = () => {
   return (
     <div className={rc([css.wrapper, "wrapper"])}>
-      <Container className={css.container}>
-        <div className={css.layout}>
-          <Sidebar />
+      <div className={css.layout}>
+        <Sidebar />
 
-          <div className={rc([css.page, "scroll"])}>
-            <header className="header">header</header>
+        <div className={rc([css.page, "scroll"])}>
+          <Header />
 
-            <main className="main">
-              <Outlet />
-            </main>
-          </div>
+          <main className={rc(['main', 'main-top'])}>
+            <Outlet />
+          </main>
         </div>
-      </Container>
+      </div>
 
       <div className={css.bg}>
         <video
@@ -33,7 +32,7 @@ export const RootLayout = () => {
           autoPlay
           loop
           playsInline
-          preload="auto" 
+          preload="auto"
           disablePictureInPicture
           disableRemotePlayback
           aria-hidden="true"
