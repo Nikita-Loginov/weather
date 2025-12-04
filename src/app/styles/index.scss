@@ -10,7 +10,7 @@ html {
   --gray-400-color: #5e5e5e;
   --gray-500-color: #363636;
   --gray-600-color: #272727;
-  --gray-800-color: #1e1e1e;
+  --gray-800-color: #1e1e1ed9;
 
   --border-radius-3xl: 36px;
   --border-radius-2xl: 32px;
@@ -85,6 +85,7 @@ body {
 
 .main {
   flex: 1;
+  height: 100%;
 
   &.main-top {
     padding-top: calc(var(--header-height, 56px) + 24px);
@@ -142,7 +143,7 @@ h4 {
 .h5,
 h5 {
   font-size: var(--font-size-md);
-  font-weight: var(-weight-font-middle);
+  font-weight: var(--weight-font-middle);
 }
 
 .h6,

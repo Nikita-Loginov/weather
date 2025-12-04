@@ -47,7 +47,7 @@ export const Header = () => {
       ref={header}
     >
       <div className={css["header__info"]}>
-        <p className="h5">Hi, friend</p>
+        <p className="h5">Привет, друг!</p>
 
         <GreetingText />
       </div>

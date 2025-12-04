@@ -1,6 +1,6 @@
 export const GREETING_TEXTS = {
-  morning: "Good Morning",
-  afternoon: "Good Afternoon",
-  evening: "Good Evening",
-  night: "Good Night",
+  morning: "Доброе утро",
+  afternoon: "Добрый день",
+  evening: "Добрый вечер",
+  night: "Спокойной ночи",
 } as const;

@@ -1,7 +1,11 @@
-import { useForecast } from "@/features/weather/api/weather.api";
+import { WeatherDashboard } from "@/features/weather/ui/weather-dashboard/weather-dashboard";
+
+import css from "./home-page.module.scss";
 
 export const HomePage = () => {
-  useForecast(50.45, 30.52);
- 
-  return <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, maiores?</p>;
+  return (
+    <section className={css["section"]}>
+      <WeatherDashboard />
+    </section>
+  );
 };

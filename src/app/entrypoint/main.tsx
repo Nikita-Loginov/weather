@@ -8,7 +8,5 @@ import "../styles/reset.scss";
 const rootElement = document.getElementById("root")!;
 if (!rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);
-  root.render(
-   <AppProvider />
-  );
+  root.render(<AppProvider />);
 }

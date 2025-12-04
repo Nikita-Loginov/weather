@@ -1,0 +1,64 @@
+.weather-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__box,
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__footer {
+    //    margin-top: auto;
+    justify-content: end;
+    text-align: right;
+  }
+
+  &__img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img-block {
+    width: min(50%, 700px);
+    aspect-ratio: 1 / 1;
+
+    img,
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
